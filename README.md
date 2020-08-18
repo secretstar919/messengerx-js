@@ -1,8 +1,8 @@
 ![alt text](https://www.messengerx.io/img/logo.png 'Messengerx.io')
 
-# messengerx
+# machaao
 
-### MessengerX Node SDK for integrating Messengerx.io with your chatbot
+MessengerX Node SDK for integrating Messengerx.io with your chatbot
 
 ## Documenation
 
