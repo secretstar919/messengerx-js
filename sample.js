@@ -1,7 +1,7 @@
-const MxSdk = require('./index');
+const MxSdk = require('messengerx-js');
 const express = require('express');
 const server = express();
-const lib = new MxSdk('<---Bot Token---->', 'dev', server);
+const lib = new MxSdk('453592c0-cc6a-11ea-b09c-a1176daf79d8', 'dev', server);
 
 server.post('/incoming', async (req, res) => {
 	let x = await lib.getUserMessages(req); // read incoming user messages
