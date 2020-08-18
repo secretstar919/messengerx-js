@@ -1,7 +1,7 @@
 {
 	"name": "machaao",
-	"version": "0.1.5",
-	"description": "MessengerX Node SDK for integrating Messengerx.io with your chatbot",
+	"version": "0.1.6",
+	"description": "Build, develop and rapidly launch personalized chatbots on Web and Android via MessengerX.io",
 	"main": "index.js",
 	"scripts": {
 		"sample": "node sample.js",
@@ -17,11 +17,19 @@
 		"request-promise": "^4.2.6"
 	},
 	"keywords": [
-		"MessengerX",
-		"Chatbot",
-		"Chat Apps",
+		"messengerx.io",
+		"machaao",
+		"chatbots",
+		"personalization",
+		"chatbot",
+		"rasa",
+		"dialogflow",
+		"messaging",
+		"chatapp",
 		"express",
-		"messengerx node",
-		"messengerx sdk"
+		"bots",
+		"data science",
+		"chatbot framework",
+		"bot framework"
 	]
 }
