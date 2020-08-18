@@ -1,20 +1,20 @@
-![alt text](https://www.messengerx.io/img/logo.png 'Messengerx.io')
+![alt text](https://www.messengerx.io/img/logo.png 'MessengerX.io')
 
-# machaao
+# machaao - chatbot package information
+NodeJS package for MessengerX.io HTTP APIs
+machaao is a NodeJS based npm library for building chatbots using MessengerX APIs.
 
-MessengerX Node SDK for integrating Messengerx.io with your chatbot
-
-## Documenation
+## Documentation
 
 -   Visit https://messengerx.rtfd.io/ for full documenation.
 
-## Install
+## Installation
 
 ```
 npm i --save machaao
 ```
 
-## Use
+## Quick Start Guide
 
 -   Register via [MessengerX Developer Portal](https://portal.messengerx.io) and verify your account.
 -   Create a new bot by clicking on 'Add New App'
