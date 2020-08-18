@@ -1,6 +1,6 @@
 {
 	"name": "machaao",
-	"version": "0.1.3",
+	"version": "0.1.4",
 	"description": "MessengerX Node SDK for integrating Messengerx.io with your chatbot",
 	"main": "index.js",
 	"scripts": {
