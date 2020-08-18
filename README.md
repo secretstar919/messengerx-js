@@ -1,8 +1,9 @@
 ![alt text](https://www.messengerx.io/img/logo.png 'MessengerX.io')
 
-# machaao - build, develop and launch your chat apps on website and android
-NodeJS package for MessengerX.io HTTP APIs
-machaao is a NodeJS based npm library for building chatbots using MessengerX APIs.
+# machaao - Build, develop and launch your chat apps on Web and Android
+NodeJS package for MessengerX.io REST APIs
+
+Machaao is a NodeJS based npm library for building chatbots using MessengerX APIs.
 
 ## Documentation
 
