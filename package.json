@@ -1,6 +1,6 @@
 {
 	"name": "machaao",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"description": "MessengerX Node SDK for integrating Messengerx.io with your chatbot",
 	"main": "index.js",
 	"scripts": {
@@ -15,5 +15,13 @@
 		"jsonwebtoken": "^8.5.1",
 		"request": "^2.88.2",
 		"request-promise": "^4.2.6"
-	}
+	},
+	"keywords": [
+		"MessengerX",
+		"Chatbot",
+		"Chat Apps",
+		"express",
+		"messengerx node",
+		"messengerx sdk"
+	]
 }
