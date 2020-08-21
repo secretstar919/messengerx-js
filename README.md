@@ -1,6 +1,7 @@
 ![alt text](https://www.messengerx.io/img/logo.png 'MessengerX.io')
 
 # Build, develop and launch your chat apps on Web and Android
+
 NodeJS package for MessengerX.io REST APIs
 npm module for building chatbots using MessengerX APIs.
 
@@ -88,3 +89,10 @@ server.listen(3000);
 ## Support
 
 For any queries or questions, please write to [support@messengerx.io](mailto:support@messengerx.io) to reach us.
+
+## Release Notes
+
+### v 0.1.8
+
+-   Added support for User Tags API.
+-   Better API response handling
