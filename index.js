@@ -95,14 +95,6 @@ class MessengerxSdk {
 							template_type: 'button',
 							text: messageText,
 							buttons: buttons,
-							// elements: [
-							// 	{
-							// 		title: messageText,
-							// 		subtitle: '',
-							// 		image_url: '',
-							// 		buttons: buttons,
-							// 	},
-							// ],
 						},
 					},
 				};
@@ -187,7 +179,36 @@ class MessengerxSdk {
 			throw error;
 		}
 	}
+	async addUserTag(tag, values, req) {
+		if (!req) throw new Error('missing express req object');
+		if (!tag) throw new Error('missing tag');
+		if (!values) throw new Error('missing values');
 
+		if (typeof values === 'string') {
+			if (values.length < 1) throw new Error('value cannot be empty');
+			else values = [values];
+		}
+
+		const u = this.getUserFromRequest(req);
+		return utils.post(
+			this.env,
+			{
+				tag: tag,
+				status: 1,
+				values: values,
+				displayName: tag,
+			},
+			utils.services.tag,
+			this.api_token,
+			`${u}`
+		);
+	}
+
+	async getUserTags(req) {
+		if (!req) throw new Error('missing express req object');
+		const u = this.getUserFromRequest(req);
+		return utils.get('dev', utils.services.userTags, `${u}`, this.api_token);
+	}
 	getUserFromRequest(req) {
 		if (!req) throw new Error('missing body object');
 

@@ -10,32 +10,44 @@ const services = {
 	searchContent: 'v1/content/search/',
 	searchContentViaSlug: 'v1/content/',
 };
-async function post(env, payload, service, t) {
+async function post(env, payload, service, t, slug) {
 	env = env === 'dev' ? devUrl : prodUrl;
-	let endpoint = null;
+	const url = slug ? `${env}${service}${slug}` : `${env}${service}`;
 	const options = {
 		method: 'POST',
-		uri: `${env}${service}`,
+		uri: url,
 		json: payload,
 		headers: {
 			api_token: t,
 			'Content-Type': 'application/json',
+		},
+		transform: function (body, response) {
+			if (typeof body === 'string') {
+				response.body = JSON.parse(body);
+				return response.body;
+			} else return response.body;
 		},
 	};
 
 	return rp(options);
 }
 
-async function get(env, payload, service) {
+async function get(env, service, slug, t) {
 	env = env === 'dev' ? devUrl : prodUrl;
-	let endpoint = null;
-	const x = Object.keys(services).filter((line) => line === service);
+	const url = slug ? `${env}${service}${slug}` : `${env}${service}`;
+
 	const options = {
 		method: 'GET',
-		uri: `${env}${x}`,
+		uri: url,
 		headers: {
 			api_token: t,
 			'Content-Type': 'application/json',
+		},
+		transform: function (body, response) {
+			if (typeof body === 'string') {
+				response.body = JSON.parse(body);
+				return response.body;
+			} else return response.body;
 		},
 	};
 
