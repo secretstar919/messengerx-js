@@ -179,7 +179,7 @@ class MessengerxSdk {
 			throw error;
 		}
 	}
-	async addUserTag(tag, values, req) {
+	async addUserTag(tag, values, req, userId) {
 		if (!req) throw new Error('missing express req object');
 		if (!tag) throw new Error('missing tag');
 		if (!values) throw new Error('missing values');
@@ -189,7 +189,7 @@ class MessengerxSdk {
 			else values = [values];
 		}
 
-		const u = this.getUserFromRequest(req);
+		const u = userId || this.getUserFromRequest(req);
 		return utils.post(
 			this.env,
 			{
@@ -204,9 +204,9 @@ class MessengerxSdk {
 		);
 	}
 
-	async getUserTags(req) {
+	async getUserTags(req, userId) {
 		if (!req) throw new Error('missing express req object');
-		const u = this.getUserFromRequest(req);
+		const u = userId || this.getUserFromRequest(req);
 		return utils.get('dev', utils.services.userTags, `${u}`, this.api_token);
 	}
 	getUserFromRequest(req) {
