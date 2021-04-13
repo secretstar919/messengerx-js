@@ -207,7 +207,7 @@ class MessengerxSdk {
 	async getUserTags(req, userId) {
 		if (!req) throw new Error('missing express req object');
 		const u = userId || this.getUserFromRequest(req);
-		return utils.get('dev', utils.services.userTags, `${u}`, this.api_token);
+		return utils.get(this.env, utils.services.userTags, `${u}`, this.api_token);
 	}
 	getUserFromRequest(req) {
 		if (!req) throw new Error('missing body object');
