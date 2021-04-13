@@ -1,4 +1,6 @@
-![alt text](https://www.messengerx.io/img/logo.png 'MessengerX.io')
+![alt text](https://www.messengerx.io/img/logo.png 'MessengerX.io')  
+
+[![Gitter](https://badges.gitter.im/messengerx-io/community.svg)](https://gitter.im/messengerx-io/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  
 
 # Build, develop and launch your chat apps on Web and Android
 
