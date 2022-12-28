@@ -78,7 +78,7 @@ class MessengerxSdk {
 				buttons.map(function (l) {
 					if (l.type !== 'postback' && l.type !== 'web_url') throw Error(`invalid button type: ${l.type}`);
 					if (!l.title) throw Error('Missing button title');
-					if (!l.payload) throw Error('Missing button payload');
+					if (!l.url && !l.payload) throw Error('Missing button / url payload');
 				});
 			}
 			var messageData = {

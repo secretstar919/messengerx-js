@@ -2,10 +2,10 @@
 
 [![Gitter](https://badges.gitter.im/messengerx-io/community.svg)](https://gitter.im/messengerx-io/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  
 
-# Build, develop and launch your chat apps on Web and Android
+# Build, develop and launch your personalized chat apps
 
-NodeJS package for MessengerX.io REST APIs
-npm module for building chatbots using MessengerX APIs.
+NodeJS package for MACHAAO aka MessengerX.io
+npm module for building personalized chatbots on web and beyond
 
 ## Documentation
 
