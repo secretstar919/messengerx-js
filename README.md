@@ -33,7 +33,7 @@ npm i --save machaao
 const MxSdk = require('machaao');
 const express = require('express');
 const server = express();
-const lib = new MxSdk('<----Bot Token----->', 'dev', server);
+const lib = new MxSdk('<----Bot Token----->', 'prod', server);
 
 server.listen(3000);
 
