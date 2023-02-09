@@ -33,7 +33,7 @@ npm i --save machaao
 const MxSdk = require('machaao');
 const express = require('express');
 const server = express();
-const lib = new MxSdk('<----Bot Token----->', 'dev', server);
+const lib = new MxSdk('<----Bot Token----->', 'prod', server);
 
 server.listen(3000);
 
@@ -47,7 +47,7 @@ server.listen(3000);
 const MxSdk = require('machaao');
 const express = require('express');
 const server = express();
-const lib = new MxSdk('<---Bot Token---->', 'dev', server);
+const lib = new MxSdk('<---Bot Token---->', 'prod', server);
 
 server.post('/incoming', async (req, res) => {
 	let x = await lib.getUserMessages(req); // read incoming user messages
@@ -94,7 +94,7 @@ For any queries or questions, please write to [support@messengerx.io](mailto:sup
 
 ## Release Notes
 
-### v 0.1.8
+### v 0.2.1
 
 -   Added support for User Tags API.
 -   Better API response handling
