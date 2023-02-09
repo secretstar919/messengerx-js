@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/messengerx-io/community.svg)](https://gitter.im/messengerx-io/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)  
 
-# Build, develop and launch your personalized chat apps
+# Build, Grow and Monetize Personalized Chatbots
 
 NodeJS package for MACHAAO aka MessengerX.io
 npm module for building personalized chatbots on web and beyond
@@ -27,7 +27,7 @@ npm i --save machaao
 -   You can set Webhook and Image Url as None till deployment of your Chat App to get started.
 -   Once your bot is created, click on Settings and copy 'Token' value.
 -   Install npm package in your server file by running `npm i --save machaao`
--   Initialize the MessengerX SDK as show in the example below which takes in the `Token` that you copied in the above step, `environment` which is either dev or prod (default is dev) and `server` object. Currently our SDK supports express server object and other libraries will be supported in upcoming releases:
+-   Initialize the MessengerX SDK as show in the example below which takes in the `Token` that you copied in the above step, and `server` object. Currently our SDK supports express server object and other libraries will be supported in upcoming releases:
 
 ```
 const MxSdk = require('machaao');
